@@ -1,0 +1,60 @@
+.dosare {
+
+  .check-box-tree {
+
+    margin-top: 2em;
+
+    .react-checkbox-tree {
+
+      .rct-text {
+        font-size: 18px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .rct-checkbox {
+          display: none;
+        }
+
+        label {
+          display: flex;
+        }
+
+        .rct-node-icon {
+          margin: 0 10px 0 0;
+          height: 25px;
+          width: 25px;
+
+          svg {
+            height: 25px;
+            width: 25px;
+          }
+        }
+
+        .rct-checkbox {
+          height: 25px;
+          width: 25px;
+
+          svg {
+            height: 25px;
+            width: 25px;
+          }
+        }
+
+        .rct-title {
+          padding: 0;
+        }
+
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: #0f62fe;
+    font-family: 'InsightWebBold'
+  }
+
+}

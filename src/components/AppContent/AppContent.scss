@@ -1,0 +1,14 @@
+@import './../../assets/scss/_mixins.scss';
+
+.appContent {
+  margin-top: 5em;
+  //box-shadow: 0 1px 4px rgba(0,0,0,.2);
+
+  .bx--content-switcher {
+    height: 4rem;
+
+    .bx--content-switcher__label {
+      font-size: 24px;
+    }
+  }
+}

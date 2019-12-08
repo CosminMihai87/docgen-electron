@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3d924512-9879-4601-b785-43b80197e9a9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="1UNyr8Cd4KIoXezPH9qotf3Pfup" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/reducers" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\0.Cosmin\5.React\docgen-electron\src\services\reducers" />
+      <recent name="C:\0.Cosmin\5.React\docgen-electron\src\components\UI" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3d924512-9879-4601-b785-43b80197e9a9" name="Default Changelist" comment="" />
+      <created>1575211543530</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575211543530</updated>
+      <workItem from="1575211546921" duration="11000" />
+      <workItem from="1575211570564" duration="104678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1575513293775">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575513293775" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575211586659">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575211586659" />
+    <state x="540" y="262" key="IDE.errors.dialog" timestamp="1575506200874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="262" key="IDE.errors.dialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575506200874" />
+    <state x="710" y="230" key="RollbackChangesDialog" timestamp="1575325652886">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="710" y="230" key="RollbackChangesDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575325652886" />
+    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575413252234">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575413252234" />
+    <state x="843" y="116" width="989" height="742" key="find.popup" timestamp="1575767578288">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="843" y="116" width="989" height="742" key="find.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575767578288" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1575767993221">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575767993221" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575765955339">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575765955339" />
+  </component>
+</project>

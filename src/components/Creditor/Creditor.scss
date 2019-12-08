@@ -1,0 +1,32 @@
+.creditor-form {
+  margin-top: 2em;
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+
+  .bx--label {
+    font-size: 20px;
+  }
+
+  .bx--select-input, .bx--text-input {
+    font-size: 18px;
+  }
+  .bx--select-input {
+    width: auto;
+  }
+
+  .bx--btn {
+    font-size: 18px;
+  }
+
+  .bx--row {
+    margin-top: 1em;
+  }
+
+  .submit-row-creditor {
+    align-self: flex-end;
+    margin-top: 5em;
+  }
+
+}

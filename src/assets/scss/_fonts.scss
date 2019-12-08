@@ -1,0 +1,32 @@
+//Copyright 2019, IntraLinks, Inc, All rights reserved.
+//@author: Cosmin Mihai <cmihai@intralinks.com>
+
+@font-face {
+  font-family: 'InsightWebBold';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../font-styles/InsightWeb/insight_web_bold.eot');
+  src:
+    url('../font-styles/InsightWeb/insight_web_bold.eot') format('embedded-opentype'),
+    url('../font-styles/InsightWeb/insight_web_bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'InsightWebLight';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../font-styles/InsightWeb/insight_web_light.eot');
+  src:
+          url('../font-styles/InsightWeb/insight_web_light.eot') format('embedded-opentype'),
+          url('../font-styles/InsightWeb/insight_web_light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'InsightWebRegular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../font-styles/InsightWeb/insight_web_regular.eot');
+  src:
+          url('../font-styles/InsightWeb/insight_web_regular.eot') format('embedded-opentype'),
+          url('../font-styles/InsightWeb/insight_web_regular.ttf') format('truetype')
+}

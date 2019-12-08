@@ -1,0 +1,126 @@
+.machete {
+  margin-top: 2em;
+
+  .bx--select-input {
+    width: auto;
+  }
+
+  .bx--btn {
+    font-size: 18px;
+    max-width: 100%;
+  }
+
+  .btn-row {
+    display: inline-flex;
+    width: 100%;
+    align-self: flex-end;
+    margin-top: 5em;
+
+    .bx--col-lg-8:nth-child(2) {
+      display: inline-flex;
+      justify-content: flex-end;
+
+    }
+  }
+
+  .titlu-executoriu {
+    .bx--label {
+      font-size: 18px;
+      color: #0f62fe;
+      font-family: 'InsightWebBold'
+    }
+    .bx--select-input, .bx--text-input {
+      font-size: 16px;
+    }
+  }
+
+  .debit {
+    .bx--label {
+      margin-top: 1em;
+      font-size: 18px;
+      color: #0f62fe;
+      font-family: 'InsightWebBold'
+    }
+    .bx--select-input, .bx--text-input {
+      margin-bottom: 0.5em;
+      font-size: 16px;
+    }
+  }
+
+  .mijloace-de-executie {
+    margin-bottom: 2em;
+    display: flex;
+
+    .bx--label {
+      font-size: 18px;
+      color: #0f62fe;
+      font-family: 'InsightWebBold'
+    }
+
+    .bx--checkbox-label-text {
+      font-size: 16px;
+    }
+  }
+
+  .react-checkbox-tree {
+    .rct-text {
+      font-size: 18px;
+
+      label {
+        display: flex;
+      }
+
+      .rct-node-icon {
+        margin: 0 10px 0 0;
+        height: 25px;
+        width: 25px;
+
+        svg {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .rct-checkbox {
+        height: 25px;
+        width: 25px;
+
+        svg {
+          height: 25px;
+          width: 25px;
+        }
+      }
+
+      .rct-title {
+        padding: 0;
+      }
+
+    }
+  }
+
+  .check-box-tree-result {
+
+    .react-checkbox-tree {
+
+      .rct-text {
+        &:hover {
+          cursor: pointer;
+        }
+
+        .rct-checkbox {
+          display: none;
+        }
+      }
+
+    }
+
+  }
+
+  h4 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    color: #0f62fe;
+    font-family: 'InsightWebBold'
+  }
+
+}

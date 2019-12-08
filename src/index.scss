@@ -1,0 +1,64 @@
+$feature-flags: (
+        ui-shell: true,
+        grid-columns-16: true,
+);
+
+@import '../node_modules/carbon-components/scss/globals/scss/styles.scss';
+@import '../node_modules/carbon-components/scss/globals/grid/grid';
+//@import './assets/scss/_fonts.scss';
+@import './assets/scss/_variables.scss';
+
+body {
+  margin: 0;
+  font-family: InsightWebRegular, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/// Need grid option to not add page gutters at large viewports, to also use when nesting grids
+/// @link https://github.com/carbon-design-system/carbon/issues/2792
+@media (min-width: 42rem) {
+  .bx--grid--no-gutter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
+/// @link https://github.com/carbon-design-system/carbon/issues/3010
+.bx--content {
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'InsightWebBold';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/font-styles/InsightWeb/insight_web_bold.eot');
+  src:
+          url('./assets/font-styles/InsightWeb/insight_web_bold.eot') format('embedded-opentype'),
+          url('./assets/font-styles/InsightWeb/insight_web_bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'InsightWebLight';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/font-styles/InsightWeb/insight_web_light.eot');
+  src:
+          url('./assets/font-styles/InsightWeb/insight_web_light.eot') format('embedded-opentype'),
+          url('./assets/font-styles/InsightWeb/insight_web_light.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'InsightWebRegular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/font-styles/InsightWeb/insight_web_regular.eot');
+  src:
+          url('./assets/font-styles/InsightWeb/insight_web_regular.eot') format('embedded-opentype'),
+          url('./assets/font-styles/InsightWeb/insight_web_regular.ttf') format('truetype')
+}
