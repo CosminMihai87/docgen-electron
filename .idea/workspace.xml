@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d924512-9879-4601-b785-43b80197e9a9" name="Default Changelist" comment="" />
+    <list default="true" id="3d924512-9879-4601-b785-43b80197e9a9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContextAPI/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContextAPI/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Creditor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Creditor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Debitor/Debitor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Debitor/Debitor.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Debitor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Debitor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Machete/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Machete/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Parti/Parti.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Parti/Parti.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Parti/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Parti/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/createFolderStructure.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/createFolderStructure.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="docgen-electron" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,18 +41,23 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/reducers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\0.Cosmin\5.React\docgen-electron\src\services\reducers" />
       <recent name="C:\0.Cosmin\5.React\docgen-electron\src\components\UI" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\0.Cosmin\5.React\docgen-electron\src\components" />
     </key>
   </component>
   <component name="ServiceViewManager">
@@ -64,7 +83,17 @@
       <option name="presentableId" value="Default" />
       <updated>1575211543530</updated>
       <workItem from="1575211546921" duration="11000" />
-      <workItem from="1575211570564" duration="104678000" />
+      <workItem from="1575211570564" duration="109365000" />
+      <workItem from="1576090300694" duration="19515000" />
+      <workItem from="1578525552172" duration="2335000" />
+      <workItem from="1578528054863" duration="30000" />
+      <workItem from="1578528917155" duration="77000" />
+      <workItem from="1578529004908" duration="399000" />
+      <workItem from="1578529484379" duration="298000" />
+      <workItem from="1578530008212" duration="3355000" />
+      <workItem from="1578766719170" duration="131000" />
+      <workItem from="1578766858464" duration="33349000" />
+      <workItem from="1578949720253" duration="21413000" />
     </task>
     <servers />
   </component>
@@ -76,7 +105,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -87,10 +118,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="688" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575513293775" />
-    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1575211586659">
+    <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578766798784">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575211586659" />
+    <state x="640" y="249" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1578766798784" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1576090405459">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1576090405459" />
     <state x="540" y="262" key="IDE.errors.dialog" timestamp="1575506200874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -99,21 +134,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="710" y="230" key="RollbackChangesDialog/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575325652886" />
+    <state x="461" y="146" width="998" height="730" key="SettingsEditor" timestamp="1578962849591">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="146" width="998" height="730" key="SettingsEditor/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1578962849591" />
     <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575413252234">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="604" y="134" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575413252234" />
-    <state x="843" y="116" width="989" height="742" key="find.popup" timestamp="1575767578288">
+    <state x="843" y="116" width="989" height="742" key="find.popup" timestamp="1578967680877">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="843" y="116" width="989" height="742" key="find.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575767578288" />
+    <state x="843" y="116" width="989" height="742" key="find.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1578967680877" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1575767993221">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575767993221" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1575765955339">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1578531966337">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1575765955339" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.1.1920.1040@0.0.1920.1040" timestamp="1578531966337" />
   </component>
 </project>

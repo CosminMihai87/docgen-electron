@@ -39,14 +39,14 @@ const Machete = () => {
     const { addToast } = useToasts();
     let globalContext = useContext(GlobalContext);
 
-    const [dosarNR, setDosarNR] = useState(globalContext.data.nr_folders+1);
+    const [dosarNR, setDosarNR] = useState(globalContext.data.nrFolders+1);
 
     const [checkedItems, setCheckedItems] = useState([]);
 
     const [jsonTreeResult, setJsonTreeResult] = useState( [{
         value: `${dosarNR}parent`,
         type: 'folder',
-        label: `Ds. ${dosarNR} din 2019 (${globalContext.data.nume_creditor} vs. ${globalContext.data.nume_debitor})`,
+        label: `Ds. ${dosarNR} din 2019 (${globalContext.data.creditori[0].nume} vs. ${globalContext.data.debitori[0].nume})`,
         children: []
     }]);
 
@@ -127,7 +127,7 @@ const Machete = () => {
 
     const handleBackBtn = () => {
         globalContext.updateDetails({
-            step: 1
+            step: 0
         });
     };
 
@@ -144,8 +144,8 @@ const Machete = () => {
         postFolder(jsonTreeResult);
     };
 
-    // console.log(`globalContext=${globalContext.data.nr_folders}`);
-    // console.log(`dosarNR=${dosarNR}`);
+    console.log(`globalContext=${globalContext.data.nrFolders}`);
+    console.log(`dosarNR=${dosarNR}`);
 
     useEffect( () => {
         if (postFolderState.loading === false &&
@@ -161,9 +161,8 @@ const Machete = () => {
                 addToast('Structura a fost salvata in baza!', { appearance: 'success' });
                 addToast('Alege te rog o cale valida pentru a exporta structura.', { appearance: 'warning' });
             }
+            globalContext.updateDetails({nrFolders: dosarNR });
             setDosarNR(dosarNR+1);
-            // globalContext.updateDetails({nr_folders: globalContext.data.nr_folders+1 });
-            // updateTreeStateResultExpanded();
         }
 
         if (postFolderState.error.length>0) {
@@ -171,10 +170,6 @@ const Machete = () => {
         }
 
     },[postFolderState]);
-
-    useEffect( () => {
-        setJsonTreeResult(jsonTreeResult);
-    },[setDosarNR]);
 
     return (
         <div className="bx--row machete">

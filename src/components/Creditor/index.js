@@ -1,104 +1,62 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useRef } from 'react';
 import './Creditor.scss';
 import {
-    Form,
     Select,
     SelectItem,
-    TextInput,
-    Button
+    TextInput
 } from 'carbon-components-react';
+import {Controller, useForm} from "react-hook-form";
 import { GlobalContext } from "../ContextAPI";
 
-const Creditor = () => {
+const Creditor = props => {
 
     const globalContext = useContext(GlobalContext);
-
+    const { control, handleSubmit, register, errors } = useForm();
     const [persoanaFizica, setPersoanaFizica] = useState(true);
 
-    const CreditorTextInput = props => {
+    const toggletPersoanaFizica = () => {
+        setPersoanaFizica(!persoanaFizica);
+    };
+
+    const TextInputTemplate = props => {
         return (
             <TextInput {...props} />
         );
     };
-
-    CreditorTextInput.defaultProps = {
-        className: "className",
+    TextInputTemplate.defaultProps = {
+        className: "",
         disabled: false,
         helperText: "",
-        id: "id",
+        id: "",
         invalid: false,
-        invalidText: "",
+        invalidText: "Completarea campului este necesara pentru a trece mai departe.",
         labelText: "labelText",
         light: false,
         placeholder: "Placeholder text",
         type: "text"
     };
 
-    const toggleCreditorHandler = () => {
-        setPersoanaFizica(!persoanaFizica);
-    };
-
-    // const handleCreditorTextInputChange = (event) => {
-    //     if (persoanaFizica) {
-    //         globalContext.updateDetails({
-    //             persoana_creditor: event.nativeEvent.data
-    //
-    //         });
-    //     } else if (!persoanaFizica) {
-    //         globalContext.updateDetails({
-    //             persoana_creditor: event.nativeEvent.data
-    //         });
-    //     }
-    // };
-
-    const handleSubmit = (event) => {
-        const data = new FormData(event.target);
-        if (data.get('select1') === "Fizica") {
-            globalContext.updateDetails({
-                step: 1,
-                persoana_creditor: data.get('select1'),
-                nume_creditor: data.get('textinput1'),
-                domiciliul_creditor: data.get('textinput2'),
-                judetul_creditor: data.get('textinput3'),
-                titlu_executoriu: data.get('textinput4'),
-                debit: data.get('textinput5'),
-            });
-        } else if (data.get('select1') === "Juridica") {
-            globalContext.updateDetails({
-                step: 1,
-                persoana_creditor: data.get('select1'),
-                nume_creditor: data.get('textinput1'),
-                sediul_creditor: data.get('textinput2'),
-                judetul_creditor: data.get('textinput3'),
-                titlu_executoriu: data.get('textinput4'),
-                debit: data.get('textinput5'),
-            });
-        }
+    const onSubmit = data => {
+        globalContext.updateCreditori(data);
     };
 
     return (
-        <div className="bx--row">
-            <Form
-                className="bx-col-lg-16 bx--col-sm-4 creditor-form"
-                onSubmit={(event) => handleSubmit(event)}
-            >
-                <div className="bx--row">
-                    <div className="bx--col-lg-2 bx--col-sm-2">
+        <form
+            onBlur={handleSubmit(onSubmit)}>
+
+            <div className="bx--row">
+                <Controller
+                    as={
                         <Select
-                            className="generare-dosar-form-1"
-                            defaultValue={globalContext.data.persoana_creditor}
+                            className=""
                             disabled={false}
                             helperText=""
                             iconDescription="open list of options"
-                            id="select1"
+                            id=""
                             inline={false}
                             invalid={false}
                             invalidText=""
-                            labelText="Persoana:"
                             light={false}
-                            name="select1"
-                            onChange={toggleCreditorHandler}
-                            required
                         >
                             <SelectItem
                                 disabled={false}
@@ -113,103 +71,79 @@ const Creditor = () => {
                                 value="Juridica"
                             />
                         </Select>
-                    </div>
-                    <div className="bx--col-lg-4 bx--col-sm-4">
-                        {persoanaFizica ?
-                            <CreditorTextInput
-                                className="generare-dosar-form-2"
-                                defaultValue={globalContext.data.nume_creditor}
-                                id="textinput1"
-                                labelText="Nume/Prenume:"
-                                name="textinput1"
-                                // onChange={(event) => handleCreditorTextInputChange(event)}
-                                placeholder="Ex: Andreca Niculache"
-                                required
-                            />
-                            : <CreditorTextInput
-                                className="generare-dosar-form-2"
-                                defaultValue={globalContext.data.nume_creditor}
-                                id="textinput1"
-                                labelText="Denumire Societate:"
-                                name="textinput1"
-                                // onChange={(event) => handleCreditorTextInputChange(event)}
-                                placeholder="Ex: S.C. POLARISAN M HOLDING S.R.L."
-                                required
-                            />}
-                    </div>
-                    <div className="bx--col-lg-6 bx--col-sm-4">
-                        {persoanaFizica ?
-                            <CreditorTextInput
-                                className="generare-dosar-form-3"
-                                defaultValue={globalContext.data.domiciliul_creditor}
-                                id="textinput2"
-                                labelText="cu domiciliul in:"
-                                name="textinput2"
-                                placeholder="Ex: com. Gruia, sat Izvoarele"
-                                required
-                            />
-                            : <CreditorTextInput
-                                className="generare-dosar-form-3"
-                                defaultValue={globalContext.data.sediul_creditor}
-                                id="textinput2"
-                                labelText="cu sediul:"
-                                name="textinput2"
-                                placeholder="Ex: Alexandria, str. Libertatii, nr.230A, et. 2"
-                                required
-                            />}
-                    </div>
-                    <div className="bx--col-lg-4 bx--col-sm-2">
-                        <CreditorTextInput
-                            className="generare-dosar-form-4"
-                            defaultValue={globalContext.data.judetul_creditor}
-                            id="textinput3"
-                            labelText="judetul:"
-                            name="textinput3"
-                            placeholder="Ex: Teleorman"
-                            required
-                        />
-                    </div>
-                </div>
-                <div className="bx--row">
-                    <div className="bx--col-lg-8 bx--col-sm-4">
-                        <CreditorTextInput
-                            className="generare-dosar-form-5"
-                            defaultValue={globalContext.data.titlu_executoriu}
-                            id="textinput4"
-                            labelText="Titlu Executoriu:"
-                            name="textinput4"
-                            placeholder="Ex: Sentinta Civila nr. 321/01.09.2018, pronuntata de Judecatoria Zimnicea"
-                            required
-                        />
-                    </div>
-                    <div className="bx--col-lg-8 bx--col-sm-4">
-                        <CreditorTextInput
-                            className="generare-dosar-form-5"
-                            defaultValue={globalContext.data.debit}
-                            id="textinput5"
-                            labelText="Debit:"
-                            name="textinput5"
-                            placeholder="Ex: 12345"
-                            required
-                        />
-                    </div>
-                </div>
-                <div className="bx--row submit-row-creditor">
-                    <div className="bx--col-lg-16 bx--col-sm-4">
-                        <Button
-                            className="generare-dosar-form-6"
-                            disabled={false}
-                            kind="primary"
-                            tabIndex={0}
-                            type="submit"
-                        >
-                            Pasul Urmator
-                        </Button>
-                    </div>
-                </div>
-            </Form>
-        </div>
+                    }
+                    control={control}
+                    defaultValue={props.persoana}
+                    labelText="Persoana:"
+                    name="persoana"
+                    onChange={toggletPersoanaFizica}
+                />
+                <Controller
+                    as={<TextInputTemplate />}
+                    control={control}
+                    defaultValue={props.id}
+                    labelText=""
+                    name="id"
+                    placeholder=""
+                    hidden
+                />
+            </div>
+            <div className="bx--row">
+                {persoanaFizica ?
+                    <Controller
+                        as={<TextInputTemplate />}
+                        control={control}
+                        defaultValue={props.nume}
+                        labelText="Nume/Prenume:"
+                        name="nume"
+                        placeholder="Ex: Andreea Niculache"
+                        // ref={register({ required: true })}
+                    />
+                    : <Controller
+                        as={<TextInputTemplate />}
+                        control={control}
+                        defaultValue={props.nume}
+                        labelText="Denumire Societate:"
+                        name="nume"
+                        placeholder="Ex: S.C. POLARISAN M HOLDING S.R.L."
+                        // ref={register({ required: true })}
+                    />
+                }
+                {/*{errors.numeCreditor && <p>Alegeti un nume valid.</p>}*/}
+            </div>
+            <div className="bx--row">
+                {persoanaFizica ?
+                    <Controller
+                        as={<TextInputTemplate />}
+                        control={control}
+                        defaultValue={props.domiciliul}
+                        labelText="cu domiciliul in:"
+                        name="domiciliul"
+                        placeholder="Ex: com. Gruia, sat Izvoarele"
+                    />
+                    : <Controller
+                        as={<TextInputTemplate />}
+                        control={control}
+                        defaultValue={props.sediul}
+                        labelText="cu sediul:"
+                        name="sediul"
+                        placeholder="Ex: Alexandria, str. Libertatii, nr.230A, et. 2"
+                    />
+                }
+            </div>
+            <div className="bx--row">
+                <Controller
+                    as={<TextInputTemplate />}
+                    control={control}
+                    defaultValue={props.judetul}
+                    labelText="judetul:"
+                    name="judetul"
+                    placeholder="Ex: Teleorman"
+                />
+            </div>
+        </form>
     );
+
 };
 
 export default Creditor;

@@ -13,12 +13,12 @@ const AppContent = () => {
     const [contentSwitch, setContentSwitch] = useState([
         {
             id: 'first',
-            display: false,
+            display: true,
             progressBarCurrentIndex: 0
         },
         {
             id: 'second',
-            display: true
+            display: false
         },
         {
             id: 'third',
@@ -38,7 +38,7 @@ const AppContent = () => {
             <div className="bx--row">
                 <ContentSwitcher
                     onChange={(event) => toggleContentSwitcher(event)}
-                    selectedIndex={1}
+                    selectedIndex={0}
                 >
                     <Switch
                         name="first"

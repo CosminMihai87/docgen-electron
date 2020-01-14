@@ -56,8 +56,8 @@ const createFolderStructure = (structuraDosar, date, outPath) => {
 
     process.nextTick(() => {
 
-        const dosarNR = date.nr_folders+1;
-        const folderName = `Ds. ${dosarNR} din 2019 (${date.nume_creditor} vs ${date.nume_debitor})`;
+        const dosarNR = date.nrFolders+1;
+        const folderName = `Ds. ${dosarNR} din 2019 (${date.creditori[0].nume} vs ${date.debitori[0].nume})`;
 
         // if output folder does not exist we create it
         if (!electronFs.existsSync(outputPath)) {
@@ -105,9 +105,9 @@ const createFolderStructure = (structuraDosar, date, outPath) => {
                                 let doc = new Docxtemplater();
                                 doc.loadZip(zip);
                                 doc.setData({
-                                    nume_creditor: date.nume_creditor,
-                                    nume_debitor: date.nume_debitor,
-                                    titlu_executoriu: date.titlu_executoriu
+                                    nume_creditor: date.creditori[0].nume,
+                                    nume_debitor: date.debitori[0].nume,
+                                    titlu_executoriu: date.titluriExecutorii[0]
                                 });
 
                                 try {

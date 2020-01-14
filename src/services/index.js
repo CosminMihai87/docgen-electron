@@ -1,10 +1,14 @@
-import { useReducer, useCallback } from 'react';
+import { useReducer, useCallback, useContext } from 'react';
 import axios from '../util/axiosInstance';
+import { GlobalContext } from '../components/ContextAPI';
 import postFolderReducer from './reducers/postFolderReducer';
 import getMacheteReducer from './reducers/getMacheteReducer';
 import getFoldersReducer from './reducers/getFoldersReducer';
 
+
 const Services = () => {
+
+    let globalContext = useContext(GlobalContext);
 
     const [postFolderState, dispatchPostFolder] = useReducer(postFolderReducer, {
         loading: false,
@@ -104,6 +108,7 @@ const Services = () => {
                 requestHeader
             )
             .then(response => {
+                // globalContext.updateDetails({nr_folders: Object.keys(response.data).map(k=> { return response.data[k][0] }).length });
                 dispatchGetFolders({
                     type: 'GET_FOLDERS_SUCCESS',
                     status: response.status,

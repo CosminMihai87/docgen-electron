@@ -2,11 +2,10 @@ import React, {useContext} from 'react';
 import './GenerareDosar.scss';
 import { GlobalContext } from "../ContextAPI";
 import ProgressBar from "../ProgressBar";
-import Creditor from "../Creditor";
-import Debitor from "../Debitor";
+import Parti from "../Parti";
 import Machete from "../Machete";
 
-const GenerareDosar = props => {
+const GenerareDosar = () => {
 
     const globalContext = useContext(GlobalContext);
 
@@ -15,9 +14,9 @@ const GenerareDosar = props => {
             <ProgressBar />
             <hr />
             {globalContext.data["step"] === 0?
-                <Creditor />
+                <Parti />
                 : globalContext.data["step"] === 1?
-                    <Debitor />
+                    <Machete />
                     : globalContext.data["step"] === 2?
                         <Machete/>
                         : <></>

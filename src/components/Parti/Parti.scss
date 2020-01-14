@@ -1,0 +1,218 @@
+.parti {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+
+  .bx--accordion {
+
+    .bx--accordion__content{
+      margin-left: 2em;
+      padding: 0 1em 1em 1em;
+    }
+
+    .bx--accordion__title{
+      font-family: 'InsightWebBold';
+      color: #0f62fe;
+      font-size: 20px;
+    }
+  }
+
+  .bx--row {
+    margin-top: 1em;
+  }
+
+  .bx--form-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    .bx--select {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+
+  .addBtn {
+    font-size: 18px;
+    width: 14em;
+
+    svg {
+      fill: white;
+    }
+  }
+
+  .bx--label {
+    font-size: 18px;
+    margin: 0 5px 0 0;
+  }
+
+  .bx--select-input, .bx--text-input {
+    font-size: 18px;
+  }
+  .bx--select-input {
+    width: auto;
+  }
+
+  .accordion-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .bx--accordion__item{
+      width: 100%;
+    }
+
+    .subtractBtn {
+      position: absolute;
+      background-color: salmon;
+      height: 34px;
+
+      .bx--assistive-text{
+        display: none;
+
+        :before {
+          content: "goodbye";
+        }
+      }
+
+      svg {
+        fill: white;
+      }
+
+      &:hover {
+        border-color: darken(salmon,10%);
+        color: white;
+        //svg {
+        //  fill: white;
+        //}
+      }
+    }
+  }
+
+  .creditor {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    .bx--row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+  }
+
+  .debitor {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    .bx--row {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+
+    @media only screen and (max-width: 1055px) {
+      margin-top: 2em;
+    }
+  }
+
+  .titlu-exec{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+    .addBtn {
+      width: 18em;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    .titlu-exec-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .subtractBtn {
+        position: absolute;
+        background-color: salmon;
+        height: 40px;
+
+        svg {
+          fill: white;
+        }
+
+        &:hover {
+          border-color: darken(salmon,10%);
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  .debit{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+
+    .addBtn {
+      width: 14em;
+
+      svg {
+        fill: white;
+      }
+    }
+
+    .debit-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      .subtractBtn {
+        position: absolute;
+        background-color: salmon;
+        height: 40px;
+
+        svg {
+          fill: white;
+        }
+
+        &:hover {
+          border-color: darken(salmon,10%);
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
+      }
+    }
+  }
+
+  .submit-row {
+    align-self: flex-end;
+    margin-top: 5em;
+
+    .bx--btn {
+      font-size: 18px;
+    }
+
+    .nextBtn {
+      width: 12em;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+
+
+}

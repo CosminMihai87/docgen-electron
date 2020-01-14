@@ -23,16 +23,16 @@ const ProgressBar = () => {
                 currentIndex={step}
             >
                 <ProgressStep
-                    description="Creditor"
-                    label="Creditor"
-                />
-                <ProgressStep
-                    description="Debitor"
-                    label="Debitor"
+                    description="Parti"
+                    label="Parti"
                 />
                 <ProgressStep
                     description="Machete"
                     label="Machete"
+                />
+                <ProgressStep
+                    description="Pasul3"
+                    label="Pasul3"
                 />
             </ProgressIndicator>
         </div>
