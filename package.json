@@ -93,7 +93,7 @@
     "@rescripts/rescript-env": "^0.0.5",
     "concurrently": "^4.1.0",
     "css-loader": "^3.2.0",
-    "electron": "^4.0.6",
+    "electron": "^7.2.4",
     "electron-builder": "^20.38.5",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.13.0",
